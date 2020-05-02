@@ -1,4 +1,3 @@
-
 var FormManager = function () {
   var form = document.querySelector('form#add-todo');
 
@@ -7,8 +6,8 @@ var FormManager = function () {
   var itemsList = document.querySelector('ul')
 
   /**
-   * Handle the submit and adds the item if the input field is non-empty
-   * @param {DOMEvent} e 
+   * Handles the submit and adds the item if the input field is non-empty
+   * @param {Event} e 
    */
   function onSubmit(e) {
     e.preventDefault();
@@ -70,7 +69,10 @@ var FormManager = function () {
     })
   }
 
+  /* Attaches the handler function to the form onSubmit event */
   form.addEventListener('submit', onSubmit)
+
+  /* Sets up some visual effect when hovering on the input */
   setupInputEffects()
 }
 

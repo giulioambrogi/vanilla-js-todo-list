@@ -31,11 +31,12 @@ yarn test:interactive
 
 # Notes
 
-In some areas the code is intentionally verbose to show how we can manipulate various attributes of a DOM element, such as:
+In some areas the code is intentionally verbose to showcase how we can manipulate the DOM elements, such as:
 
-* Enforcing some style by setting the [`style` property](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style). Which in most cases can be done in CSS but in some edge cases you may want to use JS.
-* Setting the `className` of an element
+* Enforcing the CSS [style](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style), which in most cases can be done in CSS but in some other cases you may want to use JS.
+* Setting the `className` of an element.
 * Using `appendChild` to add an element inside another element
+* Setting onSubmit and onClick events using [addEventListener](https://developer.mozilla.org/it/docs/Web/API/Element/addEventListener)
 
 # Resources
 
