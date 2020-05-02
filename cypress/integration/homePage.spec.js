@@ -5,7 +5,7 @@ describe('Home page Test', () => {
     it('the input filed allows inserting an item name', () => {
       cy.visit('http://localhost:5000')
 
-      cy.get('#item')
+      cy.get('#item-input')
         .type('A fake todo item')
         .should('have.value', 'A fake todo item')
     })

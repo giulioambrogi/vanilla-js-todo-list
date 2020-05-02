@@ -12,11 +12,10 @@ var FormManager = function () {
    */
   function onSubmit(e) {
     e.preventDefault();
-    var todoItemValue = e.target.querySelector('#item').value
+    var todoItemValue = e.target.querySelector('#item-input').value
     if (todoItemValue != null && todoItemValue.length > 0) {
       addTodoItem(todoItemValue)
     }
-    console.log(e)
   }
 
   /**
@@ -61,7 +60,7 @@ var FormManager = function () {
   }
 
   function setupInputEffects() {
-    var inputField = form.querySelector('#item')
+    var inputField = form.querySelector('#item-input')
     var originalBorder = inputField.style.border
     inputField.addEventListener('mouseenter', e => {
       e.target.style.border = '4px solid black'
