@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=5000",
+    "start": "nodemon server.js",
     "test": "cypress run",
     "test:interactive": "cypress open"
   },
@@ -12,6 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^4.5.0",
-    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
   }
 }
