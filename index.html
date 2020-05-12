@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -18,8 +19,17 @@
       </div>
     </form>
     <ul id="item-list" class="list-group"></ul>
+
+    <div id="temporary-dd-test">
+      <p id="p1" class="draggable" draggable="true">DRAGME</p>
+
+      <div class="drop-area">
+        Drop zone
+      </div>
+    </div>
   </div>
   <script src="index.js"></script>
+  <script src="dragdrop.js"></script>
 </body>
 
 </html>
