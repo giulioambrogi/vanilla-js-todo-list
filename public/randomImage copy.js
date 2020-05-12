@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   var goatTriggerBtn = document.querySelector('#cats-cta');
-  var imageContainer = document.querySelector('.img-cotainer')
+  var imageContainer = document.querySelector('.img-container')
 
   var URL = '/random-image'
 
   goatTriggerBtn.addEventListener('click', function(){
     
     var xhr = new XMLHttpRequest();
-    
+
     xhr.open('GET', URL);
     xhr.send();
 
