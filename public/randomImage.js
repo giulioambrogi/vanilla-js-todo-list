@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  var goatTriggerBtn = document.querySelector('#goat-cta');
-  var imageContainer = document.querySelector('.img-cotainer')
+  var goatTriggerBtn = document.querySelector('#cats-cta');
+  var imageContainer = document.querySelector('.img-container')
 
   var URL = '/random-image'
 
@@ -25,6 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
   })
-
-  new FormManager();
 });
