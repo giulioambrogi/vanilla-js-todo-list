@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- A section to demonstrate Generic DOM manipulations -->
+    <section>
+      <h1>Todo List</h1>
+      <form id="add-todo">
+        <div class="form-group">
+          <label for="item-input">Add a todo item</label>
+          <input type="text" class="form-control" id="item-input" aria-describedby="todoItem" placeholder="Enter todo item">
+          <br>
+          <button data-cy='add-todo' type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </form>
+      <ul id="item-list" class="list-group"></ul>
+    </section>
+
+    <!-- A section to demonstrate AJAX calls capabilities -->
+    <section>
+      <div id="goat-display">
+        <button id="goat-cta" class="btn btn-warning">Get random cat</button>
+        <div class="img-cotainer"></div>
+      </div>
+    </section>
+
+  </div>
+  <script src="index.js"></script>
+  <script src="randomImage.js"></script>
+</body>
+
+</html>
